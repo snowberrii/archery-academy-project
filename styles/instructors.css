@@ -1,7 +1,3 @@
-main {
-  grid-area: main;
-}
-
 .instructor-box {
   padding: 3vw;
   display: flex;
@@ -54,10 +50,8 @@ main h1 {
   }
 
   main h1 {
-  padding: 50px 50px 10px;
-  color: var(--color-sub-3);
-  font-style: italic;
-}
-
-
+    padding: 50px 50px 10px;
+    color: var(--color-sub-3);
+    font-style: italic;
+  }
 }
