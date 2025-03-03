@@ -180,9 +180,9 @@ footer ul li a:hover {
   color: var(--color-sub-2);
 }
 
-.nondiscriminatory-policy {
+.nondiscriminatory {
   font-size: 12px;
-  margin: 0 100px 15px;
+  margin: 0 10em 1em;
 }
 
 @media (max-width: 785px) {
@@ -248,7 +248,7 @@ footer ul li a:hover {
     z-index: 8;
   }
 
-  .nondiscriminatory-policy {
+  .nondiscriminatory {
     font-size: 10px;
     margin: 0 10px 10px;
   }
