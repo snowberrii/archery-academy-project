@@ -1,0 +1,63 @@
+main {
+  grid-area: main;
+}
+
+.instructor-box {
+  padding: 3vw;
+  display: flex;
+  align-items: center;
+  background-color: #1b447f;
+  border-radius: 15vw;
+  color: white;
+  margin: 30px 220px 80px;
+}
+
+.instructor-box img {
+  width: 12em;
+  background-color: #ecb722;
+  border-radius: 100%;
+  padding: 1vw;
+}
+
+.instructor-detail {
+  padding: 0 5vw;
+  line-height: 1.5;
+  font-size: 1.1vw;
+}
+
+main h1 {
+  padding: 30px 150px;
+  color: var(--color-sub-3);
+  font-style: italic;
+}
+
+.instructor-detail h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.instructor-detail p {
+  font-size: 20px;
+  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .instructor-box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px 60px 60px;
+  }
+
+  .instructor-detail,
+  .instructor-detail p {
+    text-align: center;
+  }
+
+  main h1 {
+  padding: 50px 50px 10px;
+  color: var(--color-sub-3);
+  font-style: italic;
+}
+
+
+}
