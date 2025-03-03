@@ -1,0 +1,40 @@
+main {
+  grid-area: main;
+  background-image: url(../images/homepage-background-image.jpg);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.main-header h1 {
+  font-size: 5.5vw;
+  padding-bottom: 20px;
+}
+
+.main-header p {
+  font-size: 4vw;
+  padding-bottom: 50px;
+}
+
+.main-link ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.main-link ul li {
+  list-style: none;
+}
+
+.main-link ul li a {
+  text-decoration: none;
+  background-color: var(--color-sub-1);
+  padding: 20px;
+  color: var(--text-color);
+  font-weight: bold;
+}
