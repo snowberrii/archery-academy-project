@@ -1,6 +1,8 @@
 main {
   grid-area: main;
   background-image: url(../images/homepage-background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   min-height: 100vh;
   display: flex;
