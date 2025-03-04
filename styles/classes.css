@@ -1,23 +1,10 @@
-.classes-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "page-header page-header page-header"
-    "group-header group-header group-header"
-    "group-item-1 group-item-2 group-item-3"
-    "private-header private-header private-header"
-    "private-item-1 private-item-2 private-item-3";
-}
-
 main h1 {
-  grid-area: page-header;
   padding: 30px 150px 10px;
   color: var(--color-sub-3);
   font-style: italic;
 }
 
-.group-lesson {
-  grid-area: group-header;
+h2 {
   text-align: center;
   padding: 0.5em;
   font-size: 2.3em;
@@ -25,8 +12,14 @@ main h1 {
   color: var(--color-sub-1);
 }
 
-.group-item-1 {
-  grid-area: group-item-1;
+.group-lesson,
+.private-lesson {
+  display: flex;
+}
+
+.group-item,
+.private-item {
+  width: 20em;
 }
 
 .left p {
@@ -66,47 +59,22 @@ b {
   background-color: var(--color-sub-1);
 }
 
-.group-item-2 {
-  grid-area: group-item-2;
-}
-
-.group-item-3 {
-  grid-area: group-item-3;
-}
-
-.private-lesson {
-  grid-area: private-header;
-  text-align: center;
-  padding: 0.5em;
-  font-size: 2.3em;
-  font-weight: bold;
-}
-
-.private-item-1 {
-  grid-area: private-item-1;
-}
-
-.private-item-2 {
-  grid-area: private-item-2;
-}
-
-.private-item-3 {
-  grid-area: private-item-3;
-}
-
 @media (max-width: 1000px) {
-  .classes-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "page-header"
-      "group-header"
-      "group-item-1"
-      "group-item-2"
-      "group-item-3"
-      "private-header"
-      "private-item-1"
-      "private-item-2"
-      "private-item-3";
+  main h1 {
+    padding: 50px 50px 30px;
+    color: var(--color-sub-3);
+    font-style: italic;
+  }
+
+  .group-lesson,
+  .private-lesson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .group-item,
+  .private-item {
+    width: 80vw;
   }
 }
