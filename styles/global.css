@@ -29,9 +29,9 @@ html {
 }
 
 nav {
+  grid-area: nav;
   top: 0;
   position: sticky;
-  grid-area: nav;
   height: 8rem;
   background-color: var(--color-main);
   display: flex;
@@ -46,6 +46,7 @@ label {
 .logo-with-hours {
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: var(--text-color);
   width: 14rem;
 }
@@ -189,7 +190,7 @@ footer ul li a:hover {
   margin: 0 10em 1em;
 }
 
-@media (max-width: 785px) {
+@media (max-width: 880px) {
   .links-container {
     flex-direction: column;
     justify-content: flex-start;
@@ -212,17 +213,18 @@ footer ul li a:hover {
     padding-right: 50px;
   }
 
+  .logo-with-hours {
+    position: fixed;
+    left: 0;
+    top: 2;
+  }
+
   nav a {
     text-align: center;
     box-sizing: border-box;
     height: auto;
     width: 100%;
     justify-content: center;
-  }
-
-  .logo-with-hours {
-    position: fixed;
-    left: 0px;
   }
 
   .nav-links {
