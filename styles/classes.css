@@ -1,7 +1,7 @@
 .classes-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-rows: auto auto 1fr auto 1fr; */
+  grid-template-rows: auto auto 1fr auto 1fr;
   grid-template-areas:
     "page-header page-header page-header"
     "group-header group-header group-header"
@@ -81,7 +81,7 @@ b {
   padding: 0.5em;
   font-size: 2.3em;
   font-weight: bold;
-  color: var(--color-sub-1);
+  
 }
 
 .private-item-1 {
@@ -96,7 +96,7 @@ b {
   grid-area: private-item-3;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1000px) {
   .classes-container {
     display: grid;
     grid-template-columns: 1fr;
