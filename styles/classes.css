@@ -23,6 +23,7 @@ main h1 {
   padding: 0.5em;
   font-size: 2.3em;
   font-weight: bold;
+  color: var(--color-sub-1);
 }
 
 .group-item-1 {
@@ -80,6 +81,7 @@ b {
   padding: 0.5em;
   font-size: 2.3em;
   font-weight: bold;
+  color: var(--color-sub-1);
 }
 
 .private-item-1 {
@@ -94,7 +96,7 @@ b {
   grid-area: private-item-3;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .classes-container {
     display: grid;
     grid-template-columns: 1fr;

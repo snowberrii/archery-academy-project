@@ -37,16 +37,21 @@ main h1 {
   text-align: left;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .instructor-box {
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 30px 60px 60px;
+    margin: 30px 20px 60px;
+  }
+
+  .instructor-box img {
+    width: 9em;
   }
 
   .instructor-detail,
   .instructor-detail p {
     text-align: center;
+    font-size: 16px;
   }
 
   main h1 {

@@ -140,6 +140,10 @@ footer {
   margin: 3em 3em 0.7em;
 }
 
+.contact-detail p {
+  font-size: 0.8em;
+}
+
 .footer-item {
   display: flex;
   flex-direction: column;
@@ -204,7 +208,7 @@ footer ul li a:hover {
 
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-right: 50px;
   }
 
@@ -214,6 +218,11 @@ footer ul li a:hover {
     height: auto;
     width: 100%;
     justify-content: center;
+  }
+
+  .logo-with-hours {
+    position: fixed;
+    left: 0px;
   }
 
   .nav-links {
@@ -227,7 +236,8 @@ footer ul li a:hover {
   }
 
   .open-sidebar-button {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .close-sidebar-button {
@@ -245,7 +255,7 @@ footer ul li a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 8;
+    z-index: 9;
   }
 
   .nondiscriminatory {
