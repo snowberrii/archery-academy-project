@@ -25,6 +25,7 @@
           ><img src="images/archery-academy-logo-white.png" id="logo" alt=""
         /></a>
       </div>
+
       <nav>
         <input type="checkbox" id="sidebar-active" />
 
@@ -65,6 +66,28 @@
           <a href="instructors.html" class="nav-links">Instructors</a>
           <a href="book-a-class.html" class="btn">Book a class</a>
         </div>
+        <audio autoplay id="player">
+          <source
+            src="images/little-tomcat-(instrumental-version)-by-josh-woodward.mp3"
+            type="audio/mpeg"
+          />
+          <source
+            src="images/little-tomcat-(instrumental-version)-by-josh-woodward.ogg"
+            type="audio/ogg"
+          />
+        </audio>
+        <div class="sound-bar">
+          <a onclick="document.getElementById('player').play()"
+            ><i class="fa-solid fa-play"></i
+          ></a>
+          <a onclick="document.getElementById('player').pause()"
+            ><i class="fa-solid fa-pause"></i
+          ></a>
+        </div>
+        <script>
+          var audio = document.getElementById("player");
+          audio.volume = 0.1;
+        </script>
       </nav>
 
       <main>
@@ -144,6 +167,52 @@
             administration of our educational policies, admission policies and
             other school administered programs. All students are welcome and
             valuable members of our community.
+          </p>
+
+          <p class="dev-details">
+            This project was coded with 💖 by
+            <a href="https://github.com/snowberrii" target="_blank">Snow C.</a>
+            in 2025 and is
+            <a
+              href="https://github.com/snowberrii/archery-academy-project"
+              target="_blank"
+            >
+              on GitHub</a
+            >
+            and
+            <a
+              href="https://snowberrii.github.io/archery-academy-project/"
+              target="_blank"
+              >hosted on GitHub</a
+            >
+          </p>
+
+          <p class="sound-credit">
+            "<a
+              rel="noopener noreferrer"
+              href="https://www.jamendo.com/track/1000095"
+              >Little Tomcat (Instrumental Version)</a
+            >" by
+            <a
+              rel="noopener noreferrer"
+              href="https://www.jamendo.com/artist/354648/Josh_Woodward_(Instrumental_Versions)"
+              >Josh Woodward (Instrumental Versions)</a
+            >
+            is licensed under
+            <a
+              rel="noopener noreferrer"
+              href="https://creativecommons.org/licenses/by/3.0/?ref=openverse"
+              >CC BY 3.0
+              <img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+                style="
+                  height: 1em;
+                  margin-right: 0.125em;
+                  display: inline;
+                " /><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+                style="height: 1em; margin-right: 0.125em; display: inline"
+            /></a>
           </p>
         </div>
       </footer>

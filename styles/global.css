@@ -113,6 +113,36 @@ main {
   grid-area: main;
 }
 
+audio {
+  height: 30px;
+  color: white;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: transparent;
+  color: wheat;
+}
+audio::-webkit-media-controls-enclosure {
+  background-color: transparent;
+}
+
+.sound-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.sound-bar a {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sound-bar a:hover {
+  color: var(--color-sub-2);
+  text-decoration: none;
+}
+
 footer {
   grid-area: footer;
   background-image: url(../images/footer-image.jpg);
@@ -182,8 +212,29 @@ footer ul li a:hover {
   color: var(--color-sub-2);
 }
 
+footer p a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: var(--color-sub-2);
+  text-decoration: underline;
+}
+
 .nondiscriminatory {
   font-size: 12px;
+  margin: 0 10em 1em;
+}
+
+.dev-details {
+  font-size: 13px;
+  margin: 0 10em 1em;
+}
+
+.sound-credit {
+  font-size: 9px;
+  color: var(--text-color);
   margin: 0 10em 1em;
 }
 
@@ -255,6 +306,11 @@ footer ul li a:hover {
   .nondiscriminatory {
     font-size: 10px;
     margin: 0 10px 10px;
+  }
+
+  .dev-details {
+    font-size: 11px;
+    margin: 0 10em 1em;
   }
 }
 

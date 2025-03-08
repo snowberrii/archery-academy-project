@@ -5,32 +5,54 @@ main h1 {
 }
 
 .about-academy {
-  padding: 2em 5vw 3vw;
+  padding: 0 5vw 3vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.about-academy img {
-  width: 40vw;
-  border-radius: 10px;
-  display: flex;
+.vdo-credit {
+  flex-direction: column;
 }
 
-.about-academy-photo {
+.about-academy img,
+.about-academy video {
+  width: 30rem;
+  border-radius: 10px;
+  display: flex;
   border-radius: 20px;
   background-color: var(--color-sub-1);
   padding: 15px;
 }
 
-.about-academy p {
+.about-academy-media {
+  padding: 15px 20px 0;
+}
+
+.vdo-credit {
+  padding: 0.5em 4em;
+  color: var(--color-sub-3);
+  font-size: 12px;
+}
+
+.vdo-credit a {
+  text-decoration: none;
+  color: var(--color-sub-3);
+}
+
+.vdo-credit a:hover {
+  text-decoration: underline;
+}
+
+.about-paragraph p {
   width: 40vw;
   font-size: 1em;
   line-height: 1.8;
-  padding: 2em;
+  padding: 1em;
   text-align: left;
   color: #444444;
 }
+
 
 .about-founder {
   padding: 3vw 20vw;
@@ -70,39 +92,36 @@ main h1 {
   margin: 1em 10em 2em;
 }
 
-@media (max-width: 1000px) {
-  main h1 {
-    padding: 50px 50px 30px;
-    color: var(--color-sub-3);
-    font-style: italic;
-  }
-
-  .about-academy img {
-    width: 20em;
-    border-radius: 10px;
-  }
-
-  .about-academy-photo {
-    border-radius: 20px;
-    padding: 0.8em;
-    background-color: #1b447f;
-  }
-
+@media (max-width: 1265px) {
   .about-academy {
-    padding: 0 5vw 3vw;
+    padding: 3vw 5vw 3vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
 
+  .about-academy img,
+  .about-academy video {
+    width: 50vw;
+    border-radius: 10px;
+  }
+
   .about-academy p {
     width: 80vw;
     font-size: 0.9em;
     line-height: 1.8;
-    padding: 20px;
+    padding: 2em 2em 0;
     text-align: center;
     color: #444444;
+  }
+}
+
+@media (max-width: 1000px) {
+  main h1 {
+    padding: 50px 50px 30px;
+    color: var(--color-sub-3);
+    font-style: italic;
   }
 
   .hr {
@@ -130,5 +149,13 @@ main h1 {
     width: 80vw;
     font-size: 0.9em;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-academy img,
+  .about-academy video {
+    width: 70vw;
+    border-radius: 10px;
   }
 }
