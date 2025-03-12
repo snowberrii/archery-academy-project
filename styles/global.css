@@ -4,7 +4,7 @@
   --color-sub-2: #ecb722;
   --color-sub-3: #444444;
   --text-color: #ffffff;
-  --bg-color: #ecb62226;
+  --bg-color: #fcf4de;
 }
 
 * {
@@ -80,6 +80,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  color: var(--color-sub-3);
 }
 
 .btn {
@@ -107,6 +108,24 @@ nav svg {
 .open-sidebar-button,
 .close-sidebar-button {
   display: none;
+}
+
+.skip-nav-link {
+  background: var(--color-sub-2);
+  color: var(--color-sub-1);
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  position: absolute;
+  left: 42vw;
+  z-index: 5;
+  transform: translateY(-120%);
+  transition: transform 300ms ease-in;
+}
+
+.skip-nav-link:focus-within {
+  transform: translateY(0%);
+  z-index: 5;
 }
 
 main {
@@ -304,11 +323,11 @@ footer p a:hover {
   }
 
   .sound-bar {
-  position: fixed;
-  top: 150px;
-  right: 40px;
-  margin: 0;
-}
+    position: fixed;
+    top: 150px;
+    right: 40px;
+    margin: 0;
+  }
 
   .nondiscriminatory {
     font-size: 10px;
@@ -331,10 +350,14 @@ footer p a:hover {
     padding-right: 20px;
   }
 
-    .sound-bar {
-  position: fixed;
-  top: 150px;
-  right: 13px;
-  margin: 0;
-}
+  .sound-bar {
+    position: fixed;
+    top: 150px;
+    right: 13px;
+    margin: 0;
+  }
+
+  .skip-nav-link {
+    left: 30vw;
+  }
 }

@@ -18,6 +18,10 @@
 
     <title>Archery Academy : Instructors</title>
   </head>
+  <div class="skip-nav-link">
+    Skip to <a href="#main-content">content</a> or
+    <a href="#footer">footer</a>
+  </div>
   <body>
     <div class="main-container">
       <div class="logo">
@@ -66,14 +70,14 @@
           <a href="book-a-class.html" class="btn">Book a class</a>
         </div>
       </nav>
-      <main>
+      <main id="main-content">
         <h1 class="current-page-header">Instructors</h1>
 
         <section class="instructor-box">
           <div>
             <img
               src="images/instructor-derek-jenkins.png"
-              alt="Derek Jenkins profile picture"
+              alt="Derek Jenkins"
             />
           </div>
           <div class="instructor-detail">
@@ -91,10 +95,7 @@
 
         <section class="instructor-box">
           <div>
-            <img
-              src="images/instructor-amy-smith.png"
-              alt="Amy Smith profile picture"
-            />
+            <img src="images/instructor-amy-smith.png" alt="Amy Smith" />
           </div>
           <div class="instructor-detail">
             <h2>Amy Smith</h2>
@@ -110,10 +111,7 @@
 
         <section class="instructor-box">
           <div>
-            <img
-              src="images/instructor-nathan-lee.png"
-              alt="Nathan Lee profile picture"
-            />
+            <img src="images/instructor-nathan-lee.png" alt="Nathan Lee" />
           </div>
           <div class="instructor-detail">
             <h2>Nathan Lee</h2>
@@ -129,21 +127,23 @@
         </section>
       </main>
 
-      <footer>
+      <footer id="footer">
         <div class="contact-detail">
           <div class="footer-item">
             <div class="footer-icon">
               <i class="fa-solid fa-phone"></i>
+              <span class="fa-sr-only">Call Us</span>
             </div>
             <p>
               (253) 555-1010 <br />
-              everyday 12pm - 6pm
+              open everyday 12pm - 6pm
             </p>
           </div>
 
           <div class="footer-item">
             <div class="footer-icon">
               <i class="fa-solid fa-map-location-dot"></i>
+              <span class="fa-sr-only">Location Address</span>
             </div>
 
             <p>
@@ -155,6 +155,7 @@
           <div class="footer-item">
             <div class="footer-icon">
               <i class="fa-solid fa-envelope"></i>
+              <span class="fa-sr-only">Email Us</span>
             </div>
             <p>archery-education@example.com</p>
           </div>
@@ -165,17 +166,26 @@
             <li>
               <a href="#" target="_blank"
                 ><i class="fa-brands fa-facebook"></i
-              ></a>
+                ><span class="fa-sr-only"
+                  >Archery academy's facebook page</span
+                ></a
+              >
             </li>
             <li>
               <a href="#" target="_blank"
                 ><i class="fa-brands fa-instagram"></i
-              ></a>
+                ><span class="fa-sr-only"
+                  >Archery academy's instagram's page</span
+                ></a
+              >
             </li>
             <li>
               <a href="#" target="_blank"
                 ><i class="fa-brands fa-tiktok"></i
-              ></a>
+                ><span class="fa-sr-only"
+                  >Archery academy's tiktok's page</span
+                ></a
+              >
             </li>
           </ul>
         </div>
@@ -190,9 +200,8 @@
             valuable members of our community.
           </p>
 
-          
           <p class="dev-details">
-            This project was coded with 💖 by
+            This project was coded with 💖<span class="fa-sr-only">love</span>by
             <a href="https://github.com/snowberrii" target="_blank">Snow C.</a>
             in 2025 and is
             <a
@@ -207,6 +216,37 @@
               target="_blank"
               >hosted on GitHub</a
             >
+          </p>
+
+          <p class="sound-credit">
+            "<a
+              rel="noopener noreferrer"
+              href="https://www.jamendo.com/track/1000095"
+              target="_blank"
+              >Little Tomcat (Instrumental Version)</a
+            >" by
+            <a
+              rel="noopener noreferrer"
+              href="https://www.jamendo.com/artist/354648/Josh_Woodward_(Instrumental_Versions)"
+              target="_blank"
+              >Josh Woodward (Instrumental Versions)</a
+            >
+            is licensed under
+            <a
+              rel="noopener noreferrer"
+              href="https://creativecommons.org/licenses/by/3.0/?ref=openverse"
+              target="_blank"
+              >CC BY 3.0
+              <img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+                style="
+                  height: 1em;
+                  margin-right: 0.125em;
+                  display: inline;
+                " /><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+                style="height: 1em; margin-right: 0.125em; display: inline"
+            /></a>
           </p>
         </div>
       </footer>

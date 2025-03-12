@@ -19,10 +19,18 @@
     <title>Archery Academy : Homepage</title>
   </head>
   <body>
+    <div class="skip-nav-link">
+      Skip to <a href="#main-content">content</a> or
+      <a href="#footer">footer</a>
+    </div>
+
     <div class="main-container">
       <div class="logo">
         <a href="index.html"
-          ><img src="images/archery-academy-logo-white.png" id="logo" alt=""
+          ><img
+            src="images/archery-academy-logo-white.png"
+            id="logo"
+            alt="Archery Academy"
         /></a>
       </div>
 
@@ -79,10 +87,12 @@
         <div class="sound-bar">
           <a onclick="document.getElementById('player').play()"
             ><i class="fa-solid fa-play"></i
-          ></a>
+            ><span class="fa-sr-only">Play Music Button</span></a
+          >
           <a onclick="document.getElementById('player').pause()"
             ><i class="fa-solid fa-pause"></i
-          ></a>
+            ><span class="fa-sr-only">Pause Music Button</span></a
+          >
         </div>
         <script>
           var audio = document.getElementById("player");
@@ -90,7 +100,7 @@
         </script>
       </nav>
 
-      <main>
+      <main id="main-content">
         <div class="main-header">
           <h1>Your journey to mastery begins here</h1>
           <p>Where precision, focus, and passion take flight!</p>
@@ -108,21 +118,23 @@
         </div>
       </main>
 
-      <footer>
+      <footer id="footer">
         <div class="contact-detail">
           <div class="footer-item">
             <div class="footer-icon">
               <i class="fa-solid fa-phone"></i>
+              <span class="fa-sr-only">Call Us</span>
             </div>
             <p>
               (253) 555-1010 <br />
-              everyday 12pm - 6pm
+              open everyday 12pm - 6pm
             </p>
           </div>
 
           <div class="footer-item">
             <div class="footer-icon">
               <i class="fa-solid fa-map-location-dot"></i>
+              <span class="fa-sr-only">Location Address</span>
             </div>
 
             <p>
@@ -134,6 +146,7 @@
           <div class="footer-item">
             <div class="footer-icon">
               <i class="fa-solid fa-envelope"></i>
+              <span class="fa-sr-only">Email Us</span>
             </div>
             <p>archery-education@example.com</p>
           </div>
@@ -144,17 +157,26 @@
             <li>
               <a href="#" target="_blank"
                 ><i class="fa-brands fa-facebook"></i
-              ></a>
+                ><span class="fa-sr-only"
+                  >Archery academy's facebook page</span
+                ></a
+              >
             </li>
             <li>
               <a href="#" target="_blank"
                 ><i class="fa-brands fa-instagram"></i
-              ></a>
+                ><span class="fa-sr-only"
+                  >Archery academy's instagram's page</span
+                ></a
+              >
             </li>
             <li>
               <a href="#" target="_blank"
                 ><i class="fa-brands fa-tiktok"></i
-              ></a>
+                ><span class="fa-sr-only"
+                  >Archery academy's tiktok's page</span
+                ></a
+              >
             </li>
           </ul>
         </div>
@@ -170,7 +192,7 @@
           </p>
 
           <p class="dev-details">
-            This project was coded with 💖 by
+            This project was coded with 💖<span class="fa-sr-only">love</span>by
             <a href="https://github.com/snowberrii" target="_blank">Snow C.</a>
             in 2025 and is
             <a
