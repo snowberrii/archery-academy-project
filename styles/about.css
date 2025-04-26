@@ -26,8 +26,9 @@ main h1 {
 }
 
 .about-academy-media {
+  display: flex;
+  justify-content: center;
   padding: 15px 20px 0;
-  justify-items: center;
 }
 
 .vdo-credit {
@@ -53,7 +54,6 @@ main h1 {
   text-align: left;
   color: #444444;
 }
-
 
 .about-founder {
   padding: 3vw 20vw;
