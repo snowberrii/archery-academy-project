@@ -27,6 +27,7 @@ main h1 {
 
 .about-academy-media {
   padding: 15px 20px 0;
+  justify-items: center;
 }
 
 .vdo-credit {
